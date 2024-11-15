@@ -209,10 +209,10 @@ decimal.addEventListener('click', () => {
     let numDisp = display.textContent;
     let lastElement = numDisp[numDisp.length-1];
     let secondNum;
-    if ('+'.includes(numDisp) ||
-        '—'.includes(numDisp) ||
-        'x'.includes(numDisp) ||
-        '/'.includes(numDisp)){
+    if (numDisp.includes('+') ||
+        numDisp.includes('—') ||
+        numDisp.includes('x') ||
+        numDisp.includes('/')){
         if (numDisp.lastIndexOf('+') != -1){
             secondNum = numDisp.split('+')[1];
             if (!(secondNum.includes('.'))){
@@ -240,9 +240,9 @@ decimal.addEventListener('click', () => {
 
         }
     } else {
-        if ('1234567890'.includes(lastElement)){
+        if ('1234567890'.includes(lastElement) && !(numDisp.includes('.'))){
             display.textContent = display.textContent + '.';
-        }
+        } 
     }
     
 })
