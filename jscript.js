@@ -54,6 +54,15 @@ function assignNumber(id){
 
 function assignOperator(id){
     let numDisp = display.textContent;
+    let lastElement = numDisp[numDisp.length-1];
+    while (lastElement == '+' ||
+        lastElement == '—' ||
+        lastElement == 'x' ||
+        lastElement == '/'
+    ) {
+        numDisp = display.textContent;
+        lastElement = numDisp[numDisp.length-1];
+    }
     if (display.getAttribute('operatorCounter') >= 1){
         if (numDisp.includes('+')){
             num1 = Number(numDisp.split('+')[0]);
