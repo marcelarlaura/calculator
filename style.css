@@ -28,6 +28,10 @@ body{
     margin-top: 5%;
     border-radius: 5%;
     background-color:lightsteelblue;
+    font-size: 7vh;
+    text-align: center;
+    display: flex;
+    flex-flow: row wrap;
 }
 
 .keysHolder{
