@@ -74,6 +74,7 @@ function assignNumber(id){
 }
 
 function assignOperator(id){
+    display.style.backgroundColor = 'lightsteelblue';
     let numDisp = display.textContent;
     let lastElement = numDisp[numDisp.length-1];
     while (lastElement == '+' ||
@@ -173,7 +174,7 @@ equal.addEventListener('click', ()=>{
     } else {
         display.textContent = display.textContent;
     }
-
+    display.style.backgroundColor = 'aqua';
 })
 
 clear.addEventListener('click', ()=>{
