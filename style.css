@@ -29,9 +29,11 @@ body{
     border-radius: 5%;
     background-color:lightsteelblue;
     font-size: 7vh;
-    text-align: center;
     display: flex;
     flex-flow: row wrap;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    justify-content: center;
+    align-items: center;
 }
 
 .keysHolder{
@@ -51,3 +53,4 @@ body{
     font-size: large;
     
 }
+
